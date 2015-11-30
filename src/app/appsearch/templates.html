@@ -1,0 +1,8 @@
+<div class="container">
+	<div>
+		<div ng-repeat="templates in vm.templateResult.items | orderBy : '-efforts'" class="templatesOuterDiv">
+			<div ng-style="{width:vm.getWidth(templates.efforts)}" class="templatesInnerDiv" > </div>
+		</div>
+		<hr>
+	</div>
+</div>

@@ -1,0 +1,37 @@
+<div class="main-container">
+	<div class="container">
+      <div class="row" ><h2 class="page-header">Make your search here</h2></div>
+      <form role="form" class="form-horizontal contract-form" novalidate name="contactForm">
+        <div class="form-group">
+          <label class="col-sm-2 control-label">Key words:</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control contact-name-input" ng-model="vm.name" value="" required="" name="name" ng-class="{true: 'error'}[submitted &amp;&amp; contactForm.name.$invalid]">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-2">
+            <button type="submit" ng-click="addMoreDetailBtn = true ; vm.search()" class="btn btn-outline btn-lg btn-block">Search</button>
+          </div>
+          <!--<div class="col-sm-3">
+            <a ng-click="vm.cancel()" class="btn btn-outline btn-lg btn-block">Cancel</a>
+          </div>-->
+        </div>
+      </form>
+    </div>
+</div>
+<div class="container">
+	<div ng-repeat="item in vm.searchResult" >
+		<a>{{item.title | limitTo:100}}</a> <input type="checkbox">
+		<p>{{item.description | limitTo:600}}</p>
+	</div>
+</div>
+<div class="container">
+	<div class="form-horizontal" >
+		<div class="form-group">
+			<div class="col-sm-4"><button ng-show="addMoreDetailBtn" ng-click="addMoreDetail=true" class="btn btn-outline btn-lg btn-block">Add more description to the CART:</button></div><br/>
+		</div>
+		<div class="form-group">
+			<div><textarea ng-show="addMoreDetail" class="form-control" rows="5" id="comment"></textarea></div>
+		</div>
+	</div>
+</div>

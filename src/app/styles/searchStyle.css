@@ -1,0 +1,62 @@
+	.navbar-default {
+		background-color: #ff804d;
+		border-color: #e7e7e7;
+		color: #fff;
+	}
+	.btn-outline{
+		background: #ffffff;
+		border: 1px solid #ff804d;
+		border-radius: 4px;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 1.015em;
+		font-weight: 300;
+		line-height: 1.42857;
+		margin-bottom: 0;
+		padding: 10px 15px;
+		text-align: center;
+		vertical-align: middle;
+		white-space: nowrap;
+		color: #ff804d;
+	}
+	
+	.btn-outline:hover{
+		background: #ff804d;
+		border: 1px solid #ff804d;
+		color: white;
+	}
+	.se-pre-con {
+        opacity: 0.4;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+		background: url(/images/default1.gif) center no-repeat #fff;
+        /*background: url(/images/Preloader.gif) center no-repeat #fff;*/
+		/*background:url(http://loading.io/loader/?key=56593ff83deb679327ce2975);*/
+    }
+	input[type="checkbox"]{
+	  width: 22px !important;
+	  height: 22px !important;
+	}
+	.templatesInnerDiv{
+		height: 80%;
+		top: 10%;
+		margin: 0 auto;
+		position: relative;
+		background:orange;
+		cursor:pointer;
+		border-radius:6px;
+		}
+	.templatesOuterDiv{
+		position:relative;
+		padding: 10px;float:
+		left;width: 32%;
+		background-color:#F5F5F5;
+		height:250px;
+		margin-right:1%;
+		margin-top:1%;
+		border-radius:6px;
+	}
